@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+/* $(document).ready(function(){
+	$("form").submit(function(e){
+		$.ajax({
+			url:"/model2/joinProc",
+			data:$("form").serialize(),
+			dataType:"json",
+			type:"get",
+			success:function(json){
+				console.log(json.code);
+				if( json.code == "1" ){
+					alert("회원가입성공");
+					history.back();
+				}else{
+					alert("회원가입실패");	
+				}				
+			},
+			error:function(err){
+				alert("요청실패");
+			}
+		});
+		e.preventDefault();
+		return false;
+	});	
+}); */
+</script>
+</head>
+<body>
+	<fieldset>
+		<form action="/model2/joinProc">
+			<input type="text" name="uid">
+			<input type="password" name="upw">
+			<input type="submit" value="회원가입">
+		</form>
+	</fieldset>
+</body>
+</html>
